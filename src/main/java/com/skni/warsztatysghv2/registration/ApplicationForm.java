@@ -1,11 +1,16 @@
 package com.skni.warsztatysghv2.registration;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ApplicationForm {
 
     private final String firstName;
     private final String lastName;
     private final String email;
 
+    @Autowired
     public ApplicationForm(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
